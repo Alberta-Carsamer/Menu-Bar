@@ -47,3 +47,129 @@
 #menu i, #check {
   display: none;
 }
+
+@media (max-width: 500px) {
+  .banner {
+    display: block;
+  }
+
+  #header {
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+  }
+
+  #header h1{
+      margin: 0;
+      font-size: 1.5rem;
+      line-height: normal;
+      font-weight: 700;
+  }
+
+  #menu {
+      width: 100%;
+      background-color: #475050;
+  }
+
+  #menu i {
+    display: block;
+  }
+
+  #menu ul {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    position: fixed;
+    height: 20%;
+    background: #475050;
+    right: -100%;
+    line-height: normal;
+    transition: 1.7s;
+  }
+
+  #menu ul li {
+    padding: 0;
+    padding-top: 5px;
+  }
+
+  #menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #menu-hide {
+    display: none;
+  }
+
+  #menu-show {
+    display: block;
+  }
+
+  
+  .show-menu-btn {
+    height: 24px;
+    width: 25px;
+    background-color: yellow;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: -38px;
+    margin-left: 90%;
+    cursor: pointer;
+    transition: left 0.4s ease;
+    position: absolute;
+    color: black;
+    float: right;
+  }
+
+  .show-menu-btn,
+  .hide-menu-btn {
+    display: block;
+  }
+
+  .show-menu-btn,
+  .hide-menu-btn {
+    transition: 0.4s;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+   .hide-menu-btn i,
+   .show-menu-btn i {
+    padding-top: 2px;
+  }
+
+  .hide-menu-btn {
+    position: relative;
+    float: right;
+    margin-top: -39.7%;
+    margin-right: 13px;
+    height: 24px;
+    width: 25px;
+    background-color: black;
+    text-align: center;
+    border-radius: 4px;
+    color: white;
+  }
+
+  .show-menu-btn:hover,
+  .hide-menu-btn:hover {
+    color: crimson;
+  }
+
+  #menu i,
+  #check {
+      display: block;
+  }
+
+  #check {
+    position: absolute;
+    visibility: hidden;
+    z-index: 1111;
+  }
+
+  #check:checked ~ ul{
+    right: 0%;
+  }
